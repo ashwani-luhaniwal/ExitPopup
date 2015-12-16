@@ -1,0 +1,212 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#formDiv {
+	display: none;
+	box-sizing: border-box;
+	width: 380px;
+	height: auto;
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	background: #FFFFFF;
+	border: 2px solid #e57200;
+	border-bottom: 0px;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666666;
+}
+
+#formDiv * {
+	box-sizing: border-box;
+}
+
+#formDiv h3 {
+	margin: 0px;
+}
+
+#formDiv p {
+	margin: 14px 0px;
+}
+
+#formDiv input {
+	width: 100%;
+	border: 1px solid #999999;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+#formDiv input[type=submit] {
+	border: 0px;
+	background-color: #e57200;
+	color: #FFFFFF;
+}
+
+textarea, select {
+	width: 100%;
+	border: 1px solid #999999;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+#formDiv label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formDiv #closeFormDiv {
+	display: block;
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: #e57200 url('http://www.currenciesdirect.com/ui/waypointstest/closebutton.png') no-repeat center center;
+	border-radius: 25px;
+	margin-top: -8px;
+	margin-right: -8px;
+}
+
+#exitpopup {
+	width:450px;
+	box-sizing: border-box;
+	height:auto; 
+	margin:0px auto; 
+	display:none; 
+	position:fixed; 
+	color:#000000; 
+	padding:20px;
+	border: 2px solid #e57200;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px; 
+	z-index:999999; 
+	background-color: #ffffff;
+	text-align:center;
+}
+
+#exitpopup * {
+	box-sizing: border-box;
+}
+
+#exitpopup h1 {
+	text-align: left;
+}
+
+#exitpopup p {
+	margin: 14px 0px;
+	font-size: 16px;
+	text-align: left;
+}
+
+#exitpopup input {
+	width: 100%;
+	border: 1px solid #999999;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+#exitpopup input[type=submit] {
+	border: 0px;
+	background-color: #e57200;
+	color: #FFFFFF;
+}
+
+textarea, select {
+	width: 100%;
+	border: 1px solid #999999;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+#exitpopup label {
+    display: block;
+    margin-bottom: 5px;
+	text-align: left;
+}
+
+#exitpopup #closeFormDiv {
+	display: block;
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: #e57200 url('http://www.currenciesdirect.com/ui/waypointstest/closebutton.png') no-repeat center center;
+	border-radius: 25px;
+	margin-top: -8px;
+	margin-right: -8px;
+}
+
+#cover { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: rgba(0, 0, 0, 0.7); 
+	z-index:5; 
+	width:100%; 
+	height:100%; 
+	display:none; 
+}
+
+/* CSS for Rating Stars */
+.stars {
+	display: inline-block;
+}
+input.star { 
+	display: none; 
+}
+label.star {
+	float: right;
+	padding: 0px 5px;
+	font-size: 36px;
+	color: #444;
+	transition: all .2s;
+}
+input.star:checked ~ label.star:before {
+	content: '\f005';
+	color: #FD4;
+	transition: all .25s;
+}
+input.star-5:checked ~ label.star:before {
+	color: #FE7;
+	text-shadow: 0 0 20px #952;
+}
+input.star-1:checked ~ label.star:before { 
+	color: #F62; 
+}
+label.star:hover { 
+	transform: rotate(-15deg) scale(1.3); 
+}
+label.star:before {
+	content: '\f006';
+	font-family: FontAwesome;
+}
+
+@media screen and (max-width: 480px) {
+	
+	#formDiv {
+		width: 100%;
+		right: 0px;
+		border-left: 0px;
+		border-right: 0px;
+		border-radius: 0px;
+	}
+	
+}
